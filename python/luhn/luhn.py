@@ -20,7 +20,7 @@ class Luhn:
     def __bool__(self):
         return self.valid()
 
-def can_pay(card_num: str):
+def can_pay(card_num):
     card_num = Luhn(card_num)
     if card_num:
         print("You can pay")
